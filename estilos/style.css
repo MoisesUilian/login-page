@@ -137,7 +137,7 @@ section span.material-icons {
 
 @media screen and (max-height: 500px) {
     /* telas com height menor */
-    
+
     section {
         width: 100vw;
         height: 100vh;
@@ -161,6 +161,10 @@ section span.material-icons {
 
     form > label {
         margin: 0;
+    }
+
+    div.imagem {
+        display: none;
     }
 
 }
