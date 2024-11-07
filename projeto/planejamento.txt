@@ -1,0 +1,9 @@
+ícones: <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+adicionar ícones: class="material-icons" key, person, account_circle,  mail, login, delete, question_mark, support_agent
+
+cores: #127369 #10403B #8AA6A3 #4C5958 #BFBFBF
+
+fonte: @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+adicionar fonte: font-family: "Roboto", sans-serif;

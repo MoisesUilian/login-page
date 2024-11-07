@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1> <span class="material-icons">login</span> Faça o seu login <span class="bolinha"></span>
+            </h1>
+
+            <form action="cadastro.js" method="post" autocomplete="off">
+
+                <label for="email"> <span class="material-icons">person</span>
+                email</label>
+                <input type="email" name="email" id="email" required minlength="15" maxlength="30">
+
+                <label for="senha">
+                <span class="material-icons">key</span>
+                senha</label>
+                <input type="password" name="senha" id="senha" required minlength="8" maxlength="15">
+
+                <div class="link"><a href="#"><span class="material-icons">account_circle</span> <p>cadastre-se</p></a></div>
+                
+                <input type="submit" value="Entrar" id="entrar">
+
+                <div class="link">
+                <a href="#"><p>esqueci minha senha</p> <span class="material-icons">support_agent</span></a>
+                </div>
+            </form>
+        </section>
+        <div class="imagem"></div>
+    </main>
+
+</body>
+</html>

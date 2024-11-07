@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, arial, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightslategray;
+    background: url(../imagens/fundo1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    background-color: #6a9ebe17;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.282);
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 50px;   
+}
+
+section > h1 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.227);
+    text-decoration: underline;
+    text-decoration-color: #185f5880;
+}
+
+section > h1 > span.bolinha {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: linear-gradient(to left, #00CCBF, #3F7C85);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #00000048;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form > label {
+    font-weight: 500;
+    color: #00CCBF;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px rgba(99, 98, 98, 0.3);
+
+    display: flex;
+    align-items: center;
+}
+
+form > input {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    
+}
+
+form > input#email {
+    margin-bottom: 20px;
+}
+
+
+form > input#email, input#senha {
+    background-color: #4c595848;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    text-indent: 10px;
+}
+
+form> input#email:hover, input#senha:hover {
+    border: 2px solid #3F7C85;
+    box-shadow: 0px 0px 10px #87cefa88;
+}
+
+form > input#email:focus, input#senha:focus {
+    border: 2px solid #3F7C85;
+    box-shadow: 0px 0px 10px #87cefad2;
+}
+
+form > input#entrar {
+    background-image: linear-gradient(10deg, #3F7C85, #00CCBF, #72F2EB);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form > input#entrar:hover {
+    background-image: linear-gradient(10deg, #3F7C85, #00CCBF, #72F2EB);
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+div.link {
+    display: flex;
+    justify-content: end;
+}
+
+form > div.link > a {
+    padding-top: 5px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+form > div.link > a > p:hover {
+    text-decoration: underline;
+}
+
+section span.material-icons {
+    color: #3F7C85;
+    padding: 0px 5px;
+    
+}
+
+@media screen and (min-width: 770px) {
+    /* telas maiores */
+
+    section {
+        /* width: 80%; */
+        max-width: 450px;
+        background-color: #6a9ebe17;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 50px;
+
+    }
+
+    section > h1 {
+        font-size: 2em;
+    }
+
+    div.imagem {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(../imagens/fundo2.jpg) no-repeat center center;
+        background-size: cover;
+        height: 500px;
+        width: 450px;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 50px;
+        opacity: 0.9;
+    }
+
+}
