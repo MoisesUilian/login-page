@@ -16,7 +16,7 @@ main {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: lightslategray;
+    background-color: rgb(0, 0, 0);
     background: url(../imagens/fundo1.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -26,13 +26,12 @@ section {
     flex-flow: column nowrap;
     justify-content: center;
     width: 80%;
-    height: 500px;   
+    height: 500px;
     background-color: #6a9ebe17;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.282);
     border-radius: 10px;
     padding: 30px;
-    padding-bottom: 50px;   
 }
 
 section > h1 {
@@ -58,13 +57,13 @@ form {
 }
 
 form > label {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     color: #00CCBF;
     margin-bottom: 10px;
     text-shadow: 0px 0px 5px rgba(99, 98, 98, 0.3);
 
-    display: flex;
-    align-items: center;
 }
 
 form > input {
@@ -108,7 +107,6 @@ form > input#entrar {
 }
 
 form > input#entrar:hover {
-    background-image: linear-gradient(10deg, #3F7C85, #00CCBF, #72F2EB);
     box-shadow: 0px 0px 10px #ffffff;
 }
 
@@ -118,11 +116,11 @@ div.link {
 }
 
 form > div.link > a {
+    display: flex;
+    align-items: center;
     padding-top: 5px;
     text-decoration: none;
 
-    display: flex;
-    align-items: center;
 }
 
 form > div.link > a > p:hover {
@@ -132,6 +130,34 @@ form > div.link > a > p:hover {
 section span.material-icons {
     color: #3F7C85;
     padding: 0px 5px;
+    
+}
+
+
+@media screen and (min-width: 770px) {
+    /* telas maiores */
+    
+    section {
+        max-width: 450px;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 10%;
+    }
+    
+    section > h1 {
+        font-size: 2em;
+    }
+    
+    div.imagem {
+        display: flex;
+        height: 500px;
+        width: 450px;
+        margin-right: 10%;
+        border-radius: 0px 10px 10px 0px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(../imagens/fundo2.jpg) no-repeat center center;
+        background-size: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        opacity: 0.9;
+    }
     
 }
 
@@ -164,37 +190,7 @@ section span.material-icons {
     }
 
     div.imagem {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 770px) {
-    /* telas maiores */
-
-    section {
-        /* width: 80%; */
-        max-width: 450px;
-        background-color: #6a9ebe17;
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
-        border-radius: 10px 0px 0px 10px;
-        margin-left: 50px;
-
-    }
-
-    section > h1 {
-        font-size: 2em;
-    }
-
-    div.imagem {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent), url(../imagens/fundo2.jpg) no-repeat center center;
-        background-size: cover;
-        height: 500px;
-        width: 450px;
-        border-radius: 0px 10px 10px 0px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        margin-right: 50px;
-        opacity: 0.9;
+        height: 100vh;
     }
 
 }
